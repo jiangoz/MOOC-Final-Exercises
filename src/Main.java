@@ -5,9 +5,7 @@ public class Main {
     public static void main(String[] args) {
         // Write your main program here. Implementing your own classes will be useful.
         Scanner reader = new Scanner(System.in);
-        ArrayList<Plane> planes = new ArrayList<Plane>();
-        ArrayList<Flight> flights = new ArrayList<Flight>();
-        Airport airport = new Airport(planes, flights);
+        Airport airport = new Airport();
         UserInterface userPanel = new UserInterface(reader, airport);
         userPanel.start();
     }

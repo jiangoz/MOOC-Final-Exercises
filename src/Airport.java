@@ -4,9 +4,9 @@ public class Airport {
     private ArrayList<Plane> listOfPlanes;
     private ArrayList<Flight> listOfFlights;
 
-    public Airport(ArrayList<Plane> listOfPlanes, ArrayList<Flight> listOfFlights) {
-        this.listOfFlights = listOfFlights;
-        this.listOfPlanes = listOfPlanes;
+    public Airport() {
+        this.listOfFlights = new ArrayList<Flight>();
+        this.listOfPlanes = new ArrayList<Plane>();
     }
 
     public void addPlane(Plane plane) {
