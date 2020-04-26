@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+//represents the User Interface
 public class UserInterface {
     Scanner reader;
     private Airport airport;
@@ -9,6 +10,7 @@ public class UserInterface {
         this.airport = port;
     }
 
+    //Airport panel
     public void start() {
         System.out.println("Airport panel");
         System.out.println("--------------------");
@@ -41,6 +43,7 @@ public class UserInterface {
         }
     }
 
+    //2nd part of user interface
     private void servicePart() {
         System.out.println();
         System.out.println("Flight service");

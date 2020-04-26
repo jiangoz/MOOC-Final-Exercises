@@ -1,3 +1,4 @@
+//represents a Flight
 public class Flight {
     private Plane plane;
     private String departure;

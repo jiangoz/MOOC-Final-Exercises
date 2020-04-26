@@ -1,3 +1,4 @@
+//represents an Airplane
 public class Plane {
     private String id;
     private int capacity;
