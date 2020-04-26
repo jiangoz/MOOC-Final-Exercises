@@ -1,5 +1,6 @@
 import java.util.Comparator;
 
+//sort Jumper object by points
 public class SortByPoint implements Comparator<Jumper> {
 
     @Override

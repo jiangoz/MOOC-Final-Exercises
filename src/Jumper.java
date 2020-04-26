@@ -1,9 +1,9 @@
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Comparator;
 import java.util.Random;
 
-public class Jumper implements Comparator<Jumper> {
+//represents a Jumper
+public class Jumper {
     private int jumpLength;
     private ArrayList<Integer> jumpLengthsList;
     private String name;
@@ -18,6 +18,7 @@ public class Jumper implements Comparator<Jumper> {
         this.totalPoints = 0;
     }
 
+    //jump points are calculated based on jump length and judge points
     public void jump(Random rand) {
         this.jumpLength = rand.nextInt(60) + 60;
         this.jumpLengthsList.add(jumpLength);
@@ -51,6 +52,7 @@ public class Jumper implements Comparator<Jumper> {
         return this.judgePoints;
     }
 
+    //string output of jump lengths in meters
     public String getLengthsMeter() {
         String output = "";
         for (int i : this.jumpLengthsList) {
@@ -59,8 +61,4 @@ public class Jumper implements Comparator<Jumper> {
         return output.substring(0, (output.length() - 2));
     }
 
-    @Override
-    public int compare(Jumper jumper, Jumper t1) {
-        return 0;
-    }
 }

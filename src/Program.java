@@ -11,6 +11,7 @@ public class Program {
         this.input = new Scanner(System.in);
     }
 
+    //starts the program
     public void start() {
         //Scanner input = new Scanner(System.in);
         System.out.println("Kumpula ski jumping week\n");
@@ -30,6 +31,7 @@ public class Program {
         }
     }
 
+    //begins the jumping simulations and points calculations
     public void beginTournament() {
         int roundCount = 1;
         //int nameCount = 1;
